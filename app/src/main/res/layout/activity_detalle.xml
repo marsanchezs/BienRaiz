@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    tools:context=".Detalle">
+
+    <LinearLayout
+        android:id="@+id/llvD1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgD1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/icono"
+            app:srcCompat="@drawable/icono_bienraiz2" />
+
+        <TextView
+            android:id="@+id/txtDetalle"
+            style="@style/estilo_titulo"
+            android:text="@string/texto_titulo_detalle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llhD1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde_detalle"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llvD2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTituloFecha"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_fecha" />
+
+            <TextView
+                android:id="@+id/txtTituloTipoViv"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_tipo" />
+
+            <TextView
+                android:id="@+id/txtTituloProyecto"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_proyectoD" />
+
+            <TextView
+                android:id="@+id/txtTituloDimension"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_dimensionD" />
+
+            <TextView
+                android:id="@+id/txtTituloValor"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_valor" />
+
+            <TextView
+                android:id="@+id/txtTituloPie"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_pie" />
+
+            <TextView
+                android:id="@+id/txtTituloDescuento"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_descuento" />
+
+            <TextView
+                android:id="@+id/txtTituloValorFinal"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_total" />
+        </LinearLayout>
+
+        <View
+            android:background="@color/colorBoton"
+            android:layout_height="match_parent"
+            android:layout_width="5dp"
+            android:id="@+id/linea2"/>
+
+        <LinearLayout
+            android:id="@+id/llvD3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtFecha"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_fecha" />
+
+            <TextView
+                android:id="@+id/txtTipoViv"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_tipo" />
+
+            <TextView
+                android:id="@+id/txtProyecto"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_proyectoD" />
+
+            <TextView
+                android:id="@+id/txtDimension"
+                style="@style/estilo_titulo2"
+                android:gravity="end"
+                android:text="@string/texto_dimensionD" />
+
+            <TextView
+                android:id="@+id/txtValor"
+                style="@style/estilo_titulo2"
+                android:gravity="end"
+                android:text="@string/texto_valor" />
+
+            <TextView
+                android:id="@+id/txtPie"
+                style="@style/estilo_titulo2"
+                android:gravity="end"
+                android:text="@string/texto_pie" />
+
+            <TextView
+                android:id="@+id/txtDescuento"
+                style="@style/estilo_titulo2"
+                android:text="@string/texto_descuento" />
+
+            <TextView
+                android:id="@+id/txtValorFinal"
+                style="@style/estilo_titulo2"
+                android:gravity="end"
+                android:text="@string/texto_total" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

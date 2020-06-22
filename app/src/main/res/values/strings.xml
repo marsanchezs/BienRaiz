@@ -1,0 +1,25 @@
+<resources>
+    <!-- ACTIVITY MAIN -->
+    <string name="app_name">BIEN RAIZ</string>
+    <string name="app_titulo">BIEN RAÍZ APP</string>
+    <string name="icono">ÍCONO</string>
+    <string name="texto_tipo_vivienda">SELECCIONE</string>
+    <string name="texto_casa">CASA</string>
+    <string name="texto_departamento">DEPARTAMENTO</string>
+    <string name="texto_proyecto">PROYECTO</string>
+    <string name="texto_dimension">DIMENSIÓN</string>
+    <string name="texto_seguro">COMPRA EN VERDE</string>
+    <string name="texto_monto">INGRESE MONTO EN UF</string>
+    <string name="texto_boton">CALCULAR</string>
+
+    <!-- DETALLE -->
+    <string name="texto_titulo_detalle">DETALLE</string>
+    <string name="texto_fecha">FECHA</string>
+    <string name="texto_tipo">TIPO</string>
+    <string name="texto_proyectoD">PROYECTO</string>
+    <string name="texto_dimensionD">DIMENSIÓN</string>
+    <string name="texto_valor">VALOR VIVIENDA</string>
+    <string name="texto_pie">PIE</string>
+    <string name="texto_descuento">DESCUENTO</string>
+    <string name="texto_total">TOTAL</string>
+</resources>
