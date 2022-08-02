@@ -188,5 +188,9 @@ public class MainActivity extends AppCompatActivity {
             spDepartamento.setVisibility(View.VISIBLE);
             spDimensionDepartamento.setVisibility(View.VISIBLE);
         }
+        Log.d("Branch", "develop");
+        Log.d("Branch", "develop");
+        Log.d("Branch", "develop");
+        Log.d("Branch", "develop");
     }
 }
