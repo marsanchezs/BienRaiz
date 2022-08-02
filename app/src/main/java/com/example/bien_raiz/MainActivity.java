@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.d("Branch", "master");
+        Log.d("Branch", "develop");
+        Log.d("Branch", "develop");
         contexto = getApplicationContext();
         imgCasa = findViewById(R.id.imgCasaMA);
         imgDepartamento = findViewById(R.id.imgDepartamentoMA);
