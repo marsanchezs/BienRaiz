@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("Branch", "develop");
         Log.d("Branch", "develop");
+        Log.d("Branch", "develop");
         contexto = getApplicationContext();
         imgCasa = findViewById(R.id.imgCasaMA);
         imgDepartamento = findViewById(R.id.imgDepartamentoMA);
@@ -188,9 +189,5 @@ public class MainActivity extends AppCompatActivity {
             spDepartamento.setVisibility(View.VISIBLE);
             spDimensionDepartamento.setVisibility(View.VISIBLE);
         }
-        Log.d("Branch", "develop");
-        Log.d("Branch", "develop");
-        Log.d("Branch", "develop");
-        Log.d("Branch", "develop");
     }
 }
