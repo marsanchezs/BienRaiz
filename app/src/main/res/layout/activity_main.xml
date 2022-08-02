@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo_recuadro"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgCasaMA"
+                style="@style/logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="@string/icono" />
+
+            <ImageView
+                android:id="@+id/imgDepartamentoMA"
+                style="@style/logo"
+                android:background="@drawable/icono_edificio"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:visibility="gone"
+                android:contentDescription="@string/icono" />
+
+        </FrameLayout>
+
+        <Space style="@style/espacio" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/txtTipoBienRaizMA"
+                style="@style/texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/tipoBienRaiz" />
+
+            <RadioGroup
+                android:id="@+id/rgTipoBienRaizMA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbCasaMA"
+                    style="@style/texto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:onClick="mostrarOcultar"
+                    android:text="@string/casa"
+                    app:buttonTint="@color/colorLetra"/>
+
+                <RadioButton
+                    android:id="@+id/rbDepartamentoMA"
+                    style="@style/texto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="mostrarOcultar"
+                    android:text="@string/departamento"
+                    app:buttonTint="@color/colorLetra"/>
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <Space style="@style/espacio" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtProyectoMA"
+                style="@style/texto"
+                android:layout_gravity="center_vertical"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/proyecto" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorSpinner">
+
+                    <Spinner
+                        android:id="@+id/spCasaMA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" />
+
+                    <Spinner
+                        android:id="@+id/spDepartamentoMA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </TableRow>
+
+        <Space style="@style/espacio" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtDimensionesMA"
+                style="@style/texto"
+                android:layout_gravity="center_vertical"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dimensiones" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorSpinner">
+
+                    <Spinner
+                        android:id="@+id/spDimensionCasaMA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" />
+
+                    <Spinner
+                        android:id="@+id/spDimensionDepartamentoMA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </TableRow>
+
+        <Space style="@style/espacio" />
+
+        <CheckBox
+            android:id="@+id/chbCompraVerdeMA"
+            style="@style/texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/compraVerde"
+            app:buttonTint="@color/colorLetra"/>
+
+        <Space style="@style/espacio" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgDineroMA"
+                style="@style/imagen"
+                app:srcCompat="@drawable/icono_dinero"
+                android:contentDescription="@string/icono" />
+
+            <Space style="@style/espacioVertical3" />
+
+            <EditText
+                android:id="@+id/edtMontoMA"
+                style="@style/texto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/montoAFinanciar"
+                android:maxLength="6"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:autofillHints=""
+                android:imeOptions="actionDone"
+                app:backgroundTint="@color/colorLetra" />
+
+        </TableRow>
+
+        <Space style="@style/espacio" />
+
+        <TableRow
+            android:id="@+id/trCalcularMA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_fondo"
+            android:padding="8dp">
+
+            <Space style="@style/espacioVertical3" />
+
+            <ImageView
+                android:id="@+id/imgCalcularMA"
+                style="@style/imagen"
+                app:srcCompat="@drawable/icono_calcular"
+                android:contentDescription="@string/icono" />
+
+            <Space style="@style/espacioVertical3" />
+
+            <TextView
+                android:id="@+id/txtCalcularMA"
+                style="@style/texto"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calcular"
+                android:textSize="24sp"/>
+
+            <Space style="@style/espacioVertical3" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

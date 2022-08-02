@@ -1,0 +1,98 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.TemaPopup">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="logo">
+        <item name="android:background">@drawable/icono_casa</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="imagen">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="imagenMensaje">
+        <item name="android:background">@color/colorFondoMensaje</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <!-- TEXTOS -->
+    <style name="texto">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/lemon_milk_bold</item>
+        <item name="android:textColor">@color/colorLetra</item>
+        <item name="android:textColorHint">@color/colorLetra</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="texto2">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/lemon_milk_bold</item>
+        <item name="android:textColor">@color/colorLetra</item>
+        <item name="android:textColorHint">@color/colorLetra</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textoDetalle">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/lemon_milk_bold</item>
+        <item name="android:textColor">@color/colorLetra</item>
+        <item name="android:textColorHint">@color/colorLetra</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textoDetalle2">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/lemon_milk_bold</item>
+        <item name="android:textColor">@color/colorLetra</item>
+        <item name="android:textColorHint">@color/colorLetra</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- ESPACIOS -->
+    <style name="espacio">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">12dp</item>
+    </style>
+
+    <style name="espacio2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+    </style>
+
+    <style name="espacioVertical">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="espacioVertical2">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="espacioVertical3">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+</resources>

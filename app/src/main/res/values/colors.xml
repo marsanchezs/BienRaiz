@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E5EF96</color>
+    <color name="colorPrimaryDark">#AEC95E</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    //COLORES
+    <color name="colorFondo">#BD8635</color>
+    <color name="colorRecuadro">#9E702C</color>
+    <color name="colorBorde">#000000</color>
+    <color name="colorLetra">#FFFFFF</color>
+    <color name="colorBoton">#7F4D05</color>
+    <color name="colorBordeBoton">#000004</color>
+    <color name="colorLetraSpinner">#6A817D</color>
+    <color name="colorSpinner">#C2BB78</color>
+    <color name="colorFondoMensaje">#262626</color>
+
+    <color name="colorFondoDetalle">#4CAF50</color>
+    <color name="colorRecuadroDetalle">#3B571C</color>
+</resources>

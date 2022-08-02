@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/colorFondoDetalle"
+    tools:context=".Detalle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo_recuadro_detalle"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgCasaD"
+                style="@style/logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:contentDescription="@string/icono" />
+
+            <ImageView
+                android:id="@+id/imgDepartamentoD"
+                style="@style/logo"
+                android:background="@drawable/icono_edificio"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:contentDescription="@string/icono" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/txtCotizacionD"
+                    style="@style/texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/cotizacion"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtFechaD"
+                        style="@style/textoDetalle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mensaje" />
+
+                    <TextView
+                        android:id="@+id/txtHoraD"
+                        style="@style/textoDetalle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mensaje" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:id="@+id/linea"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLetra" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTipoD"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tipoBienRaiz" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtProyectoD"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/proyecto" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtDimensionesD"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dimensiones" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtValorViviendaD"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valorVivienda" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtMontoFinanciarD"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/montoAFinanciar2" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtDescuentoD"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descuento" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtTotalPagarD"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/totalPagar" />
+                </LinearLayout>
+
+                <Space style="@style/espacioVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTipo1D"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tipoBienRaiz" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtProyecto1D"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/proyecto" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtDimensiones1D"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="@string/numero" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtValorVivienda1D"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="@string/numero" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtMontoFinanciar1D"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="@string/numero" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtDescuento1D"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="@string/numero" />
+
+                    <Space style="@style/espacio" />
+
+                    <TextView
+                        android:id="@+id/txtTotalPagar1D"
+                        style="@style/textoDetalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="@string/numero" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

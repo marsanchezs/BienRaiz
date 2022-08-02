@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Bien Raiz</string>
+    <string name="icono">Ícono</string>
+    <string name="tipoBienRaiz">Tipo Bien Raíz</string>
+    <string name="casa">Casa</string>
+    <string name="departamento">Departamento</string>
+    <string name="proyecto">Proyecto</string>
+    <string name="dimensiones">Dimensiones</string>
+    <string name="compraVerde">Compra Verde</string>
+    <string name="montoAFinanciar">Monto A Financiar en UF</string>
+    <string name="montoAFinanciar2">Monto A Financiar</string>
+    <string name="calcular">Calcular</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="descuento">Descuento</string>
+    <string name="cotizacion">Cotización</string>
+    <string name="valorVivienda">Valor Vivienda</string>
+    <string name="totalPagar">Total A Pagar</string>
+    <string name="numero">1234567890</string>
+</resources>
