@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -37,19 +38,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Log.d("Branch", "master");
         contexto = getApplicationContext();
-
-        imgCasa = (ImageView) findViewById(R.id.imgCasaMA);
-        imgDepartamento = (ImageView) findViewById(R.id.imgDepartamentoMA);
-        rbCasa = (RadioButton) findViewById(R.id.rbCasaMA);
-        rbDepartamento = (RadioButton) findViewById(R.id.rbDepartamentoMA);
-        spCasa = (Spinner) findViewById(R.id.spCasaMA);
-        spDepartamento = (Spinner) findViewById(R.id.spDepartamentoMA);
-        spDimensionCasa = (Spinner) findViewById(R.id.spDimensionCasaMA);
-        spDimensionDepartamento = (Spinner) findViewById(R.id.spDimensionDepartamentoMA);
-        chbCompraVerde = (CheckBox) findViewById(R.id.chbCompraVerdeMA);
-        edtMonto = (EditText) findViewById(R.id.edtMontoMA);
-        TableRow btnCalcular = (TableRow) findViewById(R.id.trCalcularMA);
+        imgCasa = findViewById(R.id.imgCasaMA);
+        imgDepartamento = findViewById(R.id.imgDepartamentoMA);
+        rbCasa = findViewById(R.id.rbCasaMA);
+        rbDepartamento = findViewById(R.id.rbDepartamentoMA);
+        spCasa = findViewById(R.id.spCasaMA);
+        spDepartamento = findViewById(R.id.spDepartamentoMA);
+        spDimensionCasa = findViewById(R.id.spDimensionCasaMA);
+        spDimensionDepartamento = findViewById(R.id.spDimensionDepartamentoMA);
+        chbCompraVerde = findViewById(R.id.chbCompraVerdeMA);
+        edtMonto = findViewById(R.id.edtMontoMA);
+        TableRow btnCalcular = findViewById(R.id.trCalcularMA);
 
         edtMonto.requestFocus();
         cargarDatos();
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void validar(){
-        String mensaje = "";
+        String mensaje;
         String monto = edtMonto.getText().toString();
         if(monto.isEmpty()){
             mensaje = "AGREGAR MONTO EN UF";
